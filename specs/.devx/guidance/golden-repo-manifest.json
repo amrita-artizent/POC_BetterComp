@@ -1,0 +1,582 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-23T12:43:06.542Z",
+  "repoId": "1382673145",
+  "repoName": "POC_BetterComp",
+  "provider": "github",
+  "repoUrl": "https://github.com/amrita-artizent/POC_BetterComp",
+  "defaultBranch": "main",
+  "allFilesMode": false,
+  "requestedFilePaths": [
+    "Better_Companies_Requirement_Work_Item_Guideline.docx",
+    "01_Better_Companies_Architecture_Guideline.docx",
+    "02_Better_Companies_Coding_Development_Guideline.docx",
+    "03_Better_Companies_Review_Approval_Guideline.docx",
+    "04_Better_Companies_Testing_QE_Guideline.docx",
+    "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx"
+  ],
+  "includedFilePaths": [
+    "Better_Companies_Requirement_Work_Item_Guideline.docx",
+    "01_Better_Companies_Architecture_Guideline.docx",
+    "02_Better_Companies_Coding_Development_Guideline.docx",
+    "03_Better_Companies_Review_Approval_Guideline.docx",
+    "04_Better_Companies_Testing_QE_Guideline.docx",
+    "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx"
+  ],
+  "missingFilePaths": [],
+  "sourceFiles": [
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2131
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2083
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2048
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2032
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2132
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 1973
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 2004
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2137
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 1996
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2119
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2153
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2172
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2159
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2020
+    },
+    {
+      "path": "01_Better_Companies_Architecture_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 998
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2116
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2094
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2019
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2131
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2121
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 2016
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 1984
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2093
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 2093
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2168
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2151
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2068
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2179
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2107
+    },
+    {
+      "path": "02_Better_Companies_Coding_Development_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 1062
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2128
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2091
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2048
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2032
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2132
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 1973
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 2004
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2137
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 1996
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2119
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2153
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2172
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2159
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2020
+    },
+    {
+      "path": "03_Better_Companies_Review_Approval_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 997
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2137
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2134
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2021
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2131
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2121
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 2016
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 1984
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2093
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 2093
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2168
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2151
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2068
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2179
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2107
+    },
+    {
+      "path": "04_Better_Companies_Testing_QE_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 1063
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2040
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2025
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2048
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2032
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2132
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 1973
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 2004
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2137
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 1996
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2119
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2153
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2172
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2159
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2020
+    },
+    {
+      "path": "06_Better_Companies_Security_Governance_Responsible_AI_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 1004
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 0,
+      "score": 1,
+      "size": 2120
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 1,
+      "score": 1,
+      "size": 2174
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 2,
+      "score": 1,
+      "size": 2111
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 3,
+      "score": 1,
+      "size": 2170
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 4,
+      "score": 1,
+      "size": 2021
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 5,
+      "score": 1,
+      "size": 2183
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 6,
+      "score": 1,
+      "size": 2144
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 7,
+      "score": 1,
+      "size": 2052
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 8,
+      "score": 1,
+      "size": 2024
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 9,
+      "score": 1,
+      "size": 2021
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 10,
+      "score": 1,
+      "size": 2108
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 11,
+      "score": 1,
+      "size": 2173
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 12,
+      "score": 1,
+      "size": 2114
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 13,
+      "score": 1,
+      "size": 2173
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 14,
+      "score": 1,
+      "size": 2176
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 15,
+      "score": 1,
+      "size": 2130
+    },
+    {
+      "path": "Better_Companies_Requirement_Work_Item_Guideline.docx",
+      "chunkIndex": 16,
+      "score": 1,
+      "size": 1244
+    }
+  ],
+  "warnings": []
+}

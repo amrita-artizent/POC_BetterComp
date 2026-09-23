@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "projectName": "POC_Better_Comp",
+  "generatedAt": "2026-09-23T12:43:06.542Z",
+  "source": "golden-repo-guidance",
+  "options": {
+    "ui": [],
+    "backend": [
+      "dotnet"
+    ],
+    "database": [
+      "postgres"
+    ],
+    "ai": [],
+    "uiCustom": [],
+    "backendCustom": [],
+    "databaseCustom": []
+  }
+}

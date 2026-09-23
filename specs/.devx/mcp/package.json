@@ -1,0 +1,13 @@
+{
+  "name": "poc-better-comp-mcp-server",
+  "version": "1.0.0",
+  "description": "Astra MCP server for POC_Better_Comp specs",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}

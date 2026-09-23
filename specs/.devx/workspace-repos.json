@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "workspaceRoot": ".",
+  "generatedAt": null,
+  "repos": [],
+  "sharedLibraries": [],
+  "discovery": {
+    "toolVersion": "1.0",
+    "unvalidatedRepos": [],
+    "missingRepos": [],
+    "warnings": [
+      "Run `bash specs/.devx/discover-workspace.sh` in the target implementation workspace to populate this file."
+    ]
+  }
+}

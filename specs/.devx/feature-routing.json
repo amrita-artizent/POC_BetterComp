@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-23",
+  "deliveryOrder": "ui-first",
+  "notes": [
+    "Use this file as the initial routing recommendation before implementation.",
+    "Confirm owner and impacted repos against workspace-repos.json after running discover-workspace.sh.",
+    "If no matching repo exists, add a proposal to repo-plans.json instead of creating a new repo silently."
+  ],
+  "features": [
+    {
+      "featureId": 901191011,
+      "featureTitle": "Compatibility Assessment for Required Platforms; As a user, I want to use Compatibility Assessment for Required Platforms so that I can benefit from its core functionality; As an Executive user, I want to ask plain-English questions against approved Gold layer data so that I can get governed manufacturing insights without using unapproved datasets (+190 more)",
+      "slug": "compatibility-assessment-for-required-platforms-as-a-user-i-want-to-use-compatibility-assessment-for-required-platforms-so-that-i-can-benefit-from-its-core-functionality-as-an-executive-user-i-want-to-ask-plain-english-questions-against-approved-gold-layer-data-so-that-i-can-get-governed-manufacturing-insights-without-using-unapproved-datasets-190-more",
+      "specsHomeRepoType": "ui",
+      "ownerRepoType": "ui",
+      "impactedRepoTypes": [
+        "ui",
+        "api",
+        "worker",
+        "shared-lib"
+      ],
+      "repoTypesToCheck": [
+        "ui",
+        "api",
+        "worker",
+        "shared-lib"
+      ],
+      "repoPlanCandidates": [
+        "api",
+        "worker",
+        "shared-lib"
+      ],
+      "rationale": [
+        "Specs home defaults to the ui repo because delivery order is UI-first.",
+        "Feature includes both UI and backend signals, so the ui repo is the default owner and the other side is marked as impacted."
+      ],
+      "signals": {
+        "ui": true,
+        "api": true,
+        "worker": true,
+        "shared": true
+      }
+    }
+  ]
+}

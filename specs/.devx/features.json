@@ -1,0 +1,1261 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-23T12:43:06.638Z",
+  "enableTdd": true,
+  "totalFeatures": 1,
+  "features": [
+    {
+      "id": 901191011,
+      "taskId": "FEATURE-901191011",
+      "title": "Compatibility Assessment for Required Platforms; As a user, I want to use Compatibility Assessment for Required Platforms so that I can benefit from its core functionality; As an Executive user, I want to ask plain-English questions against approved Gold layer data so that I can get governed manufacturing insights without using unapproved datasets (+190 more)",
+      "slug": "governed-manufacturing-analytics-platform",
+      "state": "planned",
+      "status": "needs-clarification",
+      "openQuestions": [
+        {
+          "id": "oq-1",
+          "text": "What exact role or roles are authorized to view and execute the Compatibility Assessment feature?",
+          "blocking": true
+        },
+        {
+          "id": "oq-2",
+          "text": "What is the canonical approved enum for `compatibilityStatus`? The story gives examples but not a definitive enum contract.",
+          "blocking": false
+        },
+        {
+          "id": "oq-3",
+          "text": "What inputs, beyond platform entries and status values, are required for a “valid assessment request”?",
+          "blocking": false
+        },
+        {
+          "id": "oq-4",
+          "text": "How is the “overall assessment outcome” derived from platform-level statuses?",
+          "blocking": false
+        },
+        {
+          "id": "oq-5",
+          "text": "Are compatibility checks purely user-entered/documented statuses, system-derived evaluations, or a mixed workflow?",
+          "blocking": false
+        },
+        {
+          "id": "oq-6",
+          "text": "What specific failure categories must be used for platform-specific error messages?",
+          "blocking": false
+        },
+        {
+          "id": "oq-7",
+          "text": "What conditions classify a failure as retryable?",
+          "blocking": false
+        },
+        {
+          "id": "oq-8",
+          "text": "Is latest saved assessment scoped per user, per tenant, per environment, or globally for the feature?",
+          "blocking": true
+        },
+        {
+          "id": "oq-9",
+          "text": "Are notes required per platform, optional per platform, or only optional at assessment level?",
+          "blocking": false
+        },
+        {
+          "id": "oq-10",
+          "text": "What UI copy should be used for validation, authorization, retry, empty-state, and failure messages?",
+          "blocking": true
+        },
+        {
+          "id": "oq-11",
+          "text": "Is there a required audit-log retention period for authorization and failure events?",
+          "blocking": true
+        },
+        {
+          "id": "oq-12",
+          "text": "Are there any required accessibility standards for the web UI?",
+          "blocking": false
+        },
+        {
+          "id": "oq-13",
+          "text": "Are there dedicated APIs/endpoints already defined for retrieve, submit, and retry operations, or must they be introduced during implementation design?",
+          "blocking": false
+        },
+        {
+          "id": "oq-14",
+          "text": "What exact performance target applies to assessment execution response time, beyond the 2-second latest-result retrieval target?",
+          "blocking": false
+        },
+        {
+          "id": "oq-15",
+          "text": "Should historical assessments beyond the latest result be retrievable in this feature, or is only latest-result retrieval in scope?",
+          "blocking": true
+        }
+      ],
+      "storyCount": 193,
+      "totalStoryPoints": 772,
+      "files": {
+        "specs": "specs/governed-manufacturing-analytics-platform/specs.md",
+        "requirements": "specs/governed-manufacturing-analytics-platform/requirements.md",
+        "tddTests": "specs/governed-manufacturing-analytics-platform/tdd-tests.md",
+        "prompt": "specs/governed-manufacturing-analytics-platform/prompt.md"
+      },
+      "userStories": [
+        {
+          "id": 2040,
+          "title": "Compatibility Assessment for Required Platforms",
+          "state": "New",
+          "storyPoints": null
+        },
+        {
+          "id": 3352,
+          "title": "As a user, I want to use Compatibility Assessment for Required Platforms so that I can benefit from its core functionality",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2155,
+          "title": "As an Executive user, I want to ask plain-English questions against approved Gold layer data so that I can get governed manufacturing insights without using unapproved datasets",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2163,
+          "title": "As a Compliance Administrator, I want to define and enforce governed access policies for manufacturing analytics data so that the system meets data governance and compliance requirements",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2635,
+          "title": "As a Data Governance Administrator, I want to restrict conversational answers to approved Gold layer sources so that business insights remain governed and auditable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2166,
+          "title": "As a Manager user, I want AI-generated manufacturing answers to include responsible AI guardrails so that I can trust the results for trend and comparative analysis",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2174,
+          "title": "As a Procurement Reviewer, I want to view the required proposal sections clearly so that I can evaluate vendor responses against a consistent structure",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2179,
+          "title": "As a Vendor, I want to structure my proposal response by required section so that my submission can be considered complete for evaluation",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2187,
+          "title": "As a Procurement Reviewer, I want incomplete vendor proposals flagged before evaluation so that proposals missing required sections may be disqualified from evaluation",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3320,
+          "title": "As an Agent, I want to retain my existing governed analytics access through a compatibility layer so that I can use the new NLQ experience without gaining or losing permissions",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3328,
+          "title": "As a Manager, I want the existing three-tier RBAC model preserved in conversational and comparative analytics so that I retain oversight access without receiving Executive-only privileges",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3337,
+          "title": "As a System Administrator, I want to validate preserved role mappings across the compatibility layer so that Agent, Manager, and Executive access remains intact after deployment",
+          "state": "New",
+          "storyPoints": 8
+        },
+        {
+          "id": 3345,
+          "title": "As a System Administrator, I want comprehensive RBAC regression coverage against the approved baseline so that no release weakens current access controls for conversational analytics",
+          "state": "New",
+          "storyPoints": 8
+        },
+        {
+          "id": 3304,
+          "title": "As an Executive, I want to ask for first payment rate insights by agent with AI-driven comparisons so that I can evaluate performance quickly and identify meaningful variance",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3312,
+          "title": "As an Admin, I want to govern access, audit analytics usage, and document delivery assumptions so that agent performance analytics are secure, traceable, and aligned to engagement requirements",
+          "state": "New",
+          "storyPoints": 8
+        },
+        {
+          "id": 2190,
+          "title": "As an Executive, I want to view customer performance at the individual level so that I can identify high-performing and under-performing customer relationships",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2199,
+          "title": "As a Manager, I want to analyze account performance at the individual level so that I can compare account outcomes and investigate performance changes",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2202,
+          "title": "As a Manager, I want to ask plain-English questions about individual account performance so that I can quickly compare account trends and variances",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2211,
+          "title": "As a Manager, I want to view aggregated team performance analytics so that I can assess overall team performance from a manager-level view",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2216,
+          "title": "As an Executive user, I want my existing role-based access to manufacturing KPI analytics preserved so that I can continue to view only the governed Gold-layer insights approved for my role",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2223,
+          "title": "As a Manager user, I want my existing role-based access to manufacturing performance analysis preserved so that I can continue to use governed trend and variance insights without gaining unauthorized access",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2226,
+          "title": "As an Executive user, I want AI answers limited to the manufacturing analytics data my role is allowed to access so that I only receive governed Gold layer insights",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2235,
+          "title": "As a Manager user, I want AI interactions to enforce my assigned access tier so that I can use self-service analytics without viewing restricted manufacturing data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2238,
+          "title": "As a System Administrator, I want RBAC decisions for AI interactions to be auditable so that security governance can verify the existing three-tier model is enforced",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2245,
+          "title": "As an Executive user, I want conversational answers grounded only in approved Gold layer manufacturing data so that I can trust the reported trends and comparisons",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2253,
+          "title": "As a Manager user, I want the system to decline or qualify unsupported manufacturing questions so that I do not act on hallucinated answers",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2261,
+          "title": "As an Admin, I want auditable records of guardrail enforcement for each conversational query so that responsible AI controls can be reviewed and evidenced",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2264,
+          "title": "As an Admin, I want role-based guardrails applied to conversational analytics so that manufacturing answers remain both grounded and access-controlled",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2272,
+          "title": "As an Executive user, I want the system to answer only from approved Gold layer manufacturing data so that I can trust that insights stay within governed scope",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2275,
+          "title": "As a Manager user, I want out-of-scope manufacturing queries to be blocked with a clear response so that I know when a question is outside the approved data boundary",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3024,
+          "title": "As an Analytics Engineer, I want to configure the solution to use the existing Microsoft Fabric Gold layer so that governed manufacturing analytics use the approved business-ready structured data source",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3033,
+          "title": "As an Executive User, I want analytics answers to be generated from the existing Microsoft Fabric Gold layer so that I can trust the manufacturing insights are based on approved business-ready data",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3226,
+          "title": "As a Manager user, I want Slack answers to support trend, variance, and comparative analysis so that I can evaluate manufacturing performance quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2283,
+          "title": "As a Governance Administrator, I want blocked out-of-scope data requests logged with policy details so that I can review guardrail enforcement for manufacturing analytics",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2291,
+          "title": "As an Executive User, I want conversational analytics answers filtered to permitted customer fields so that I can review manufacturing performance insights without exposing restricted PII",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2299,
+          "title": "As a Platform Administrator, I want to define permitted customer fields for analytics responses so that the AI service enforces approved PII boundaries consistently",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2302,
+          "title": "As a Security Administrator, I want blocked and redacted PII response events logged so that I can audit compliance and investigate attempted exposure of customer data",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2310,
+          "title": "As a QA Analyst, I want validation coverage for permitted and non-permitted customer fields in AI answers so that the manufacturing analytics release can be approved with confidence",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2318,
+          "title": "As a Data Governance Analyst, I want to identify PII fields in approved Gold-layer datasets so that sensitive manufacturing analytics data can be governed before use",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2325,
+          "title": "As an Executive user, I want PII fields masked in manufacturing analytics responses so that I can review Gold-layer insights without exposing sensitive information",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2333,
+          "title": "As a Security Administrator, I want the system to enforce configurable PII field masking rules so that protected manufacturing analytics data follows governance standards",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2341,
+          "title": "As an Executive user, I want the system to exclude PII fields from AI prompts so that I can ask manufacturing performance questions without exposing personal data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2344,
+          "title": "As an Admin, I want to manage which Gold layer fields are treated as PII for AI prompt exclusion so that prompt sanitization follows approved governance rules",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2352,
+          "title": "As a Security Administrator, I want audit evidence of PII exclusion from AI prompts so that I can verify compliance with responsible AI and privacy controls",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2355,
+          "title": "As a Manager user, I want AI responses to apply the same PII exclusion rules across manufacturing analytics questions so that my team receives governed answers consistently",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2362,
+          "title": "As a System Administrator, I want to validate and audit PII exclusion in AI responses so that release approvals have evidence that governed response controls are working",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2365,
+          "title": "As an Executive, I want natural language answers limited to approved Gold layer manufacturing data so that I can trust that governed insights are used from day one",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2373,
+          "title": "As a Security Administrator, I want role-based access and audit controls configured before go-live so that governance controls are not retrofitted post-launch",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2376,
+          "title": "As a Project Manager, I want governance checkpoints embedded in each delivery phase so that the manufacturing analytics solution is governed from day one",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2384,
+          "title": "As an Audit Manager, I want governance evidence retained from project start so that I can verify controls were built from day one and not retrofitted post-launch",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2392,
+          "title": "As an Executive user, I want conversational analytics responses limited to approved Gold-layer data so that I can use self-service insights in a regulated environment",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2400,
+          "title": "As an Admin, I want to enforce regulated data handling policies for analytics access so that the system operates subject to TCPA, CCPA, FCRA, and FDCPA requirements",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2403,
+          "title": "As a Compliance Analyst, I want an audit trail of regulated analytics activity so that I can demonstrate the system operates in a regulated environment",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2413,
+          "title": "Happy path validation — I want a regulated-environment test plan for compliance controls",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2418,
+          "title": "Create valid regulated compliance scenario record",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2419,
+          "title": "Reject incomplete regulated scenario definition",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2420,
+          "title": "Block unauthorized compliance suite modification",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2421,
+          "title": "As an Executive, I want to ask plain-English questions about manufacturing performance so that I can get answers without dashboard navigation",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2438,
+          "title": "As a Manager, I want to ask conversational questions for trend, variance, and comparative analysis so that I can evaluate manufacturing KPI changes quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2447,
+          "title": "As a Manager, I want to compare manufacturing performance month-over-month, quarter-over-quarter, and year-over-year through AI so that I can identify variance and operational change quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2460,
+          "title": "As an Executive, I want to ask trend and comparative questions in plain English so that I can evaluate manufacturing performance quickly across reporting periods",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2929,
+          "title": "As a Data Governance Administrator, I want trend and variance analytics limited to approved Gold layer sources so that manufacturing insights remain governed and auditable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2623,
+          "title": "As an Executive user, I want to ask plain-English questions about manufacturing performance so that I can access business insights through the existing Gold layer",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2626,
+          "title": "As a Manager user, I want to ask comparative and variance questions in conversation so that I can analyze business insights from the existing Gold layer faster",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2852,
+          "title": "As an Executive, I want to ask business questions in natural language text so that I can access manufacturing insights without navigating dashboards",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2861,
+          "title": "As a Manager, I want natural language responses to return in seconds so that I can use self-service insights during operational reviews",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2643,
+          "title": "Create release-validation scope with complete NLQ coverage metadata",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2644,
+          "title": "Reject release approval when critical scope evidence requirements are undefined",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2645,
+          "title": "Validate traceability of approved question-bank scenarios to scope matrix",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2648,
+          "title": "Happy path validation — group NLQ validation scenarios by business insight and governance area",
+          "state": "Design",
+          "storyPoints": null
+        },
+        {
+          "id": 2971,
+          "title": "As an Executive, I want to ask manufacturing performance questions by voice so that I can get governed insights without relying on voice-to-text only input",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2980,
+          "title": "As a Manager, I want the voice interface to handle follow-up analytics questions so that I can compare manufacturing trends conversationally",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2450,
+          "title": "As a System Administrator, I want AI analytics queries restricted to approved Gold layer datasets so that manufacturing insights remain governed and trustworthy",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2911,
+          "title": "As a System Administrator, I want to control governed access to conversational NLQ visual output so that charts and trend visuals are shown only to authorized personas",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2919,
+          "title": "As an Executive, I want to view manufacturing KPI trends over time so that I can understand performance direction from governed analytics",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2937,
+          "title": "As a Manager, I want to analyze trend and variance results across manufacturing performance periods so that I can identify operational changes requiring action",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2945,
+          "title": "As a Manufacturing Analytics Admin, I want trend and variance analytics restricted to approved Gold layer datasets so that executive and manager comparisons remain governed and trustworthy",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2457,
+          "title": "As a Manager, I want to receive governed answers only from approved Gold layer data so that I can trust the operational insight I use for plant and production decisions",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2469,
+          "title": "As a Vendor, I want to state any assumptions made about Gold layer readiness in the proposal so that project scope and dependencies are clear before evaluation",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2472,
+          "title": "As a Vendor Engagement Manager, I want to document any dependency on Better Companies resources with estimated time commitment so that project assumptions are explicit before delivery begins",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2480,
+          "title": "As a Better Companies Executive Sponsor, I want to review declared resource dependencies and estimated time commitments so that I can assess delivery readiness and approval impact",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2483,
+          "title": "As a Project Sponsor, I want to capture a Statement of Work with defined acceptance criteria so that the manufacturing analytics engagement scope is agreed before delivery starts",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2491,
+          "title": "As an Approver, I want to agree and sign the Statement of Work so that project work can be formally authorized to begin",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2496,
+          "title": "As a Project Manager, I want the system to block work from starting until the Statement of Work is agreed and signed so that delivery follows the required governance gate",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2504,
+          "title": "As a Vendor, I want to indicate willingness to provide reference contacts upon request so that my proposal clearly addresses reference availability expectations",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2507,
+          "title": "As a Procurement Reviewer, I want to view a vendor's willingness to provide reference contacts upon request so that I can assess proposal completeness during evaluation",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2516,
+          "title": "As a Procurement Manager, I want to define the fixed-price engagement cost for the full scope from Discovery through Production go-live so that the Better Companies POC can be approved with predictable budget control",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2519,
+          "title": "As a Finance Manager, I want to define the monthly billing schedule with payment terms so that engagement invoicing is predictable and aligned to procurement governance",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 2527,
+          "title": "As a Commercial Lead, I want to price optional scope items separately so that the Better Companies POC core engagement remains commercially controlled",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2535,
+          "title": "As a Service Delivery Manager, I want to offer post-engagement support and maintenance options priced separately so that the customer can choose ongoing support after Production go-live",
+          "state": "New",
+          "storyPoints": 2
+        },
+        {
+          "id": 2543,
+          "title": "As a Commercial Lead, I want to estimate the steady-state cost per query using 500 queries per day across all user tiers so that the customer understands expected operating cost after go-live",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2546,
+          "title": "As a Proposal Manager, I want to submit the core engagement with fixed-price commitments so that the commercial proposal complies with Better Companies requirements",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2554,
+          "title": "As a Delivery Manager, I want to plan the phased delivery model so that Discovery, Build, QA, UAT & Hardening, and Production are governed consistently",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2559,
+          "title": "As an Executive Sponsor, I want weekly steering review and phase gate reviews scheduled so that both organizations can govern delivery decisions on time",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2567,
+          "title": "As a Delivery Manager, I want daily stand-up cadence and proposal milestone tracking so that Build and QA execution stays coordinated and the 07/17/2026 submission date is met",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2570,
+          "title": "As a Vendor Contact, I want to acknowledge confidentiality terms before opening the RFP so that I can access the materials in compliance with the disclosure restriction",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2578,
+          "title": "As a Procurement Manager, I want to limit RFP access to approved vendor contacts so that confidential materials are not disclosed to any third party",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2587,
+          "title": "As a Security Administrator, I want to audit vendor access to the RFP and related materials so that any confidentiality breach can be investigated",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2595,
+          "title": "As a Procurement Manager, I want to be alerted when confidential RFP materials are accessed outside approved controls so that potential third-party disclosure can be reviewed immediately",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2603,
+          "title": "As a Security Administrator, I want to mask PII fields before AI prompt generation so that SSN, date of birth, phone numbers, and account balances never flow unmasked into AI prompts",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2612,
+          "title": "As an Executive user, I want AI answers to exclude unmasked PII so that conversational analytics responses remain safe to view and share",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2615,
+          "title": "As a Compliance Manager, I want evidence that AI prompt and response masking controls are enforced so that FR-12 can be validated during security and release reviews",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2649,
+          "title": "As an Executive, I want to speak a natural language query into the analytics interface so that I can request manufacturing insight without typing",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2658,
+          "title": "As a Manager, I want to submit a transcribed voice query through the governed analytics flow so that I receive answers from approved Gold layer manufacturing data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2957,
+          "title": "As a Manager, I want my spoken request to follow the governed query path so that voice-in uses the same approved manufacturing data controls as other inputs",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2661,
+          "title": "As a Manager, I want to ask plain-English comparative questions across manufacturing KPIs so that I can quickly evaluate operational changes over time",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2664,
+          "title": "As an Analytics Administrator, I want plain-English answers to be limited to approved Gold layer data sources so that manufacturing insights remain governed and trustworthy",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2673,
+          "title": "As an Executive, I want to request a visual output for a conversational NLQ query so that I can interpret manufacturing trends and comparisons quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2676,
+          "title": "As a Manager, I want visual output to be generated only from governed Gold layer data so that I can trust the manufacturing insight presented",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2684,
+          "title": "As an Executive, I want access controls and audit logging applied to visual NLQ responses so that sensitive manufacturing data remains governed",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2687,
+          "title": "As a Manager, I want the system to handle unsupported visualization requests safely so that I receive a clear response when a chart cannot be produced",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2903,
+          "title": "As a Manager, I want to view trend visuals for conversational NLQ responses so that I can evaluate manufacturing performance over time",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2695,
+          "title": "As an Executive user, I want to view manufacturing KPI trends over time so that I can monitor performance direction from approved Gold layer data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2704,
+          "title": "As a Manager user, I want to compare manufacturing trends across periods and operational dimensions so that I can identify variance drivers quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2713,
+          "title": "As an Admin, I want to control access to trend analytics and record usage history so that manufacturing KPI insights remain secure and auditable",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2716,
+          "title": "As an Executive, I want to view variance analytics for manufacturing KPIs so that I can identify significant performance changes quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2724,
+          "title": "As a Manager, I want to drill into variance analytics by manufacturing dimension so that I can investigate the source of performance changes",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2727,
+          "title": "As an Analytics Administrator, I want to control governed variance analytics data sources and query behavior so that variance results remain secure, trusted, and compliant",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2734,
+          "title": "As an Executive user, I want to automatically generate trend visualizations from manufacturing KPI queries so that I can identify performance direction quickly",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2737,
+          "title": "As a Manager user, I want to automatically generate variance visualizations for manufacturing measures so that I can compare actual performance against prior periods",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2746,
+          "title": "As a Data Scientist, I want to train predictive models on Gold layer historical data so that manufacturing predictions are based on approved governed data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2991,
+          "title": "As a Data Analyst, I want to train predictive models on existing Gold layer manufacturing data so that forward-looking insight is based on governed and approved data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2749,
+          "title": "As an Analytics Administrator, I want to control predictive model publishing and access so that only approved manufacturing predictions are available to authorized roles",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2757,
+          "title": "As an Executive, I want to view predictive insights generated from Gold layer historical data so that I can make faster manufacturing performance decisions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2994,
+          "title": "As an Executive, I want to view predictive insight alongside historical manufacturing analysis so that I can make forward-looking decisions from the same analytics experience",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3003,
+          "title": "As a Manager, I want to compare predictive and historical manufacturing trends so that I can identify expected performance changes before they affect operations",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2760,
+          "title": "As an Admin, I want to open a lightweight admin UI as a secondary channel so that I can perform administrative actions without relying on the primary user experience",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2767,
+          "title": "As an Admin, I want the lightweight admin UI secured with role-based access so that only authorized personnel can use the secondary channel",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2776,
+          "title": "As a Security Administrator, I want the GPT-style chat interface to enforce governed data access so that manufacturing responses stay within approved Gold layer controls",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2785,
+          "title": "As an Executive, I want to speak a manufacturing analytics question so that I can get insights without typing",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2793,
+          "title": "As a Manager, I want voice-input questions to follow governed access rules so that manufacturing data remains secure and auditable",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2869,
+          "title": "As a System Administrator, I want natural language insight access governed by approved data sources and role permissions so that manufacturing data remains secure and auditable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2884,
+          "title": "As a System Administrator, I want voice-based business insight access to enforce governed data and role controls so that sensitive Gold layer information is protected",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2796,
+          "title": "As an Executive user, I want to hear an analytics response spoken aloud so that I can consume manufacturing insights without reading the screen",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2804,
+          "title": "As a Manager user, I want voice playback to respect my access rights so that sensitive manufacturing analytics are not spoken when I am not authorized",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2807,
+          "title": "As an Admin, I want to view consumption by model in the admin console so that I can monitor AI analytics usage",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2821,
+          "title": "As an Admin, I want to filter consumption visibility by model and time period so that I can review specific usage patterns",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2824,
+          "title": "As an Administrator, I want to manually override model selection in the admin console so that I can control which approved model is used",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2827,
+          "title": "As an Administrator, I want to remove or change a manual model override in the admin console so that I can restore or update model routing without deployment work",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2835,
+          "title": "As a Security Administrator, I want manual model override access restricted by role in the admin console so that only authorized personnel can change model selection",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2844,
+          "title": "As a Platform Administrator, I want manual model override changes audited and enforced during model selection so that governance teams can trace and trust override behavior",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2020,
+          "title": "Natural language access to business insights",
+          "state": "New",
+          "storyPoints": null
+        },
+        {
+          "id": 2872,
+          "title": "As an Executive user, I want to ask for business insights through voice input so that I can access manufacturing performance information without navigating dashboards",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2881,
+          "title": "As a Manager user, I want to use voice input to request trend and comparative business insights so that I can review manufacturing performance more efficiently",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2892,
+          "title": "As a Manager, I want to continue a conversational NLQ session with follow-up questions so that I can refine manufacturing analysis in plain English",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2895,
+          "title": "As a Security Administrator, I want role-based controls applied to conversational NLQ answers so that executives and managers only receive authorized plain-English responses",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2948,
+          "title": "As an Executive user, I want to receive forward-looking manufacturing insight so that I can make decisions using projected outcomes rather than only historical trend analysis",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2960,
+          "title": "As a Manager, I want voice-out responses to be clear and actionable so that I can quickly understand manufacturing performance results",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 2968,
+          "title": "As a System Administrator, I want to control voice interface access and audit voice interactions so that governed manufacturing analytics remain secure and reviewable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 2983,
+          "title": "As an Admin, I want voice interactions to enforce governed access controls so that executives and managers hear only authorized manufacturing analytics",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3010,
+          "title": "As an Admin Console Administrator, I want to view AI spend by model so that Better Companies can monitor model-level cost usage",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3019,
+          "title": "As an Admin Console Administrator, I want secured access to AI spend by model so that Better Companies can review cost data through the admin console with auditability",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3040,
+          "title": "As a Data Governance Lead, I want Gold layer data lineage and access controls enforced so that the solution remains compliant with approved governance for manufacturing operational data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3048,
+          "title": "As an Executive user, I want to submit the same manufacturing KPI question through model-agnostic routing so that I can receive governed answers without depending on a specific LLM or Copilot endpoint",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3051,
+          "title": "As a Platform Administrator, I want to configure approved routing rules for LLMs and Copilot so that the manufacturing analytics platform can change providers without redesigning the user experience",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3060,
+          "title": "As a Security Administrator, I want routed analytics requests across LLMs and Copilot to enforce access and audit controls so that manufacturing operational data remains protected and reviewable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3063,
+          "title": "As a Platform Operations Manager, I want model-agnostic routing to handle provider failure gracefully so that executive and manager analytics remain available when a configured LLM or Copilot target is unavailable",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3071,
+          "title": "As an Executive user, I want the system to route my natural language question to the most cost-aware LLM or Copilot path so that I receive fast manufacturing insight without unnecessary query cost",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3074,
+          "title": "As an Admin, I want to configure routing rules across LLMs and Copilot so that the system balances cost, performance, and governed manufacturing analytics usage",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3083,
+          "title": "As a Manager user, I want routing cost and performance outcomes to be monitored so that query volume and cost-per-query assumptions can be reviewed against operational usage",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3091,
+          "title": "As a Platform Architect, I want to validate Microsoft Fabric compatibility for Gold layer access so that governed manufacturing analytics data can be used by the solution",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3099,
+          "title": "As an AI Solution Architect, I want to validate Azure OpenAI API compatibility so that the solution can generate supported AI-driven responses",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3107,
+          "title": "As a Collaboration Integration Architect, I want to validate Slack API compatibility so that the solution can support approved Slack-based interactions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3299,
+          "title": "As an Integration Engineer, I want to validate Slack API compatibility so that the system can support approved Slack interactions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3284,
+          "title": "As a Solution Architect, I want to validate Microsoft Fabric API compatibility so that the system can use approved Gold layer services",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3292,
+          "title": "As an AI Engineer, I want to validate Azure OpenAI API compatibility so that the system can use approved AI services",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3115,
+          "title": "As a Solution Architect, I want to assess the Better Companies POC design against existing Microsoft Fabric capabilities so that the solution does not require core infrastructure changes to the Microsoft Fabric platform",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3118,
+          "title": "As a Delivery Manager, I want to validate implementation decisions against the Microsoft Fabric platform constraint so that no core infrastructure changes are introduced during delivery",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3126,
+          "title": "As a Data Architect, I want to assess the Gold layer data dictionary during Discovery so that the solution can rely on a directionally sound governed foundation",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3129,
+          "title": "As a Data Governance Lead, I want to harden the Gold layer data dictionary in Discovery so that approved definitions can support trusted manufacturing analytics",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3138,
+          "title": "As an Analytics Product Owner, I want the solution design to use the hardened Gold layer data dictionary so that AI-driven answers stay aligned to governed definitions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3141,
+          "title": "As a Data Architect, I want to assess semantic layer maturity against agentic analytics requirements so that the manufacturing solution depends on a semantic layer with sufficient maturity to support agentic integration",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3149,
+          "title": "As an Analytics Platform Administrator, I want to govern semantic layer access for agentic integration so that executives and managers receive secure and approved manufacturing insights",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3209,
+          "title": "As a Security Administrator, I want role-based access enforced in the semantic layer so that agentic integration returns only authorized manufacturing analytics data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3217,
+          "title": "As a Data Governance Lead, I want semantic-layer queries and answers to be auditable so that agentic integration can be trusted for governed manufacturing decision support",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3197,
+          "title": "As an Executive, I want the semantic layer to translate manufacturing business terms into approved Gold-layer metrics so that I receive trustworthy AI-generated answers without navigating dashboards",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3206,
+          "title": "As a Manufacturing Analytics Manager, I want governed semantic definitions for Gold-layer entities and relationships so that agentic integration can answer comparative performance questions accurately",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3152,
+          "title": "As a Data Analyst, I want to define logical dataset naming and grouping for manufacturing facts and dimensions during Discovery so that the solution has an approved semantic model to use",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3160,
+          "title": "As a Solution Architect, I want the solution to use the Discovery-defined logical dataset naming and grouping so that manufacturing analytics queries resolve against the approved facts and dimensions",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3163,
+          "title": "As a Fabric Platform Administrator, I want to configure Dev, QA, and Production deployment settings so that the solution can be deployed in Microsoft Fabric without manual rework",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3171,
+          "title": "As a Release Manager, I want to promote the solution through Dev, QA, and Production in Microsoft Fabric so that each environment is validated before go-live",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3174,
+          "title": "As a Fabric Operations Administrator, I want the solution to run with environment-specific connections and access controls so that Dev, QA, and Production operate safely in Microsoft Fabric",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3183,
+          "title": "As a Support Manager, I want environment-level monitoring for Dev, QA, and Production so that deployment and runtime issues in Microsoft Fabric can be identified quickly",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3186,
+          "title": "As a Data Engineer, I want to onboard NetSuite or financial ERP data into the Gold layer so that approved manufacturing analytics can use governed financial data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3194,
+          "title": "As an Analytics Manager, I want to validate Gold layer readiness of NetSuite or financial ERP data so that manufacturing trend and comparative analysis uses trusted financial information",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3235,
+          "title": "As a Manager user, I want validated Slack questions to improve future answers for other users so that shared learning compounds across the organization",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3238,
+          "title": "As an Executive, I want to receive manufacturing analytics answers in Slack so that Slack serves as the primary delivery channel for decision support",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3245,
+          "title": "As a Manager, I want to use plain-English questions in Slack so that I can get manufacturing trend and comparative analysis without dashboard navigation",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3251,
+          "title": "As an Admin, I want to control Slack access to governed manufacturing analytics so that only authorized Slack users can receive operational data",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3259,
+          "title": "As a Compliance Manager, I want Slack-delivered analytics interactions to be auditable so that governed manufacturing reporting remains traceable",
+          "state": "New",
+          "storyPoints": 3
+        },
+        {
+          "id": 3262,
+          "title": "As a Manager, I want to ask for manufacturing performance insights in Slack so that I can use the business's primary channel for self-service analysis",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3271,
+          "title": "As a System Administrator, I want to control Slack access to manufacturing analytics so that only authorized business roles receive governed Gold-layer responses",
+          "state": "New",
+          "storyPoints": 5
+        },
+        {
+          "id": 3276,
+          "title": "As a Support Lead, I want Slack analytics delivery to be auditable and supportable so that channel issues can be investigated without losing governance over manufacturing insight delivery",
+          "state": "New",
+          "storyPoints": 3
+        }
+      ]
+    }
+  ]
+}

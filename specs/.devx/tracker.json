@@ -1,0 +1,13 @@
+{
+  "trackerVersion": 1,
+  "updatedAt": "2026-09-23T12:43:06.638Z",
+  "tasks": {
+    "FEATURE-901191011": {
+      "status": "NEEDS_CLARIFICATION",
+      "title": "Compatibility Assessment for Required Platforms; As a user, I want to use Compatibility Assessment for Required Platforms so that I can benefit from its core functionality; As an Executive user, I want to ask plain-English questions against approved Gold layer data so that I can get governed manufacturing insights without using unapproved datasets (+190 more)",
+      "featureId": 901191011,
+      "slug": "governed-manufacturing-analytics-platform",
+      "updatedAt": "2026-09-23T12:43:06.638Z"
+    }
+  }
+}
